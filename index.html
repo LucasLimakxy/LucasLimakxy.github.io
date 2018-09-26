@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
   <head>
 
@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon" href="img/thisisnatown.png" type="image/x-icon" />
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>This is Natown</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +25,56 @@
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
 
+    <style>
+    .img-fluid {
+      height: 317px;
+      width: 451px
+    }
+    @media only screen and (max-width: 600px) {
+      .col-lg-8 {
+          text-align: center;
+      }
+    }
+
+    blockquote{
+    border-left:none
+    }
+
+    .quote-badge{
+        background-color: gray;   
+    }
+
+    .quote-box{        
+        overflow: hidden;
+        margin-top: -50px;
+        padding-top: -100px;
+        border-radius: 7px;
+        background-color:darkgray;
+        margin-top: 25px;
+        color:white;
+        /* width: 325px; */
+        box-shadow: 2px 2px 2px 2px #E0E0E0;
+        
+    }
+
+    .quotation-mark{        
+        margin-top: -10px;
+        margin-left: 20px;
+        font-weight: bold;
+        font-size:100px;
+        color:white;
+        font-family: "Times New Roman", Georgia, Serif;
+        
+    }
+
+    .quote-text{        
+        font-size: 19px;
+        margin-top: -65px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }    
+    </style>
+
   </head>
 
   <body id="page-top">
@@ -31,54 +82,46 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img height="100px" src="img/thisisnatown.png" alt="">
+        </a>
+        <div class="dropdown">
+            <a class="dropdown-toggle" style="cursor: pointer" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Lugares
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="nav-link js-scroll-trigger" href="#morfologia">morfologia</a>
+              <a class="nav-link js-scroll-trigger" href="#pinacoteca">Pinacoteca</a>
+            </div>
+          </div>
       </div>
+      
     </nav>
 
     <header class="masthead text-center text-white d-flex">
       <div class="container my-auto">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>Your Favorite Source of Free Bootstrap Themes</strong>
-            </h1>
-            <hr>
+            <h2 class="font-italic">
+              <strong>Um passeio pelos lugares escondidos dessa cidade</strong>
+            </h2>
+            <!-- <hr> -->
           </div>
           <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+            <!-- <p class="text-faded mb-5"> Um passeio pelos lugares escondidos dessa cidade</p> -->
+            <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#morfologia">Find Out More</a> -->
           </div>
         </div>
       </div>
     </header>
 
-    <section class="bg-primary" id="about">
+    <section class="bg-primary" id="morfologia">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">We've got what you need!</h2>
-            <hr class="light my-4">
-            <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+            <h2 class="section-heading text-white">Museu de Morfologia</h2>
+            <!-- <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p> -->
+            <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
           </div>
         </div>
       </div>
@@ -88,14 +131,14 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
+            <h2 class="section-heading">Como é que é lá?</h2>
             <hr class="my-4">
           </div>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
+          <!-- <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Sturdy Templates</h3>
@@ -108,21 +151,103 @@
               <h3 class="mb-3">Ready to Ship</h3>
               <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
             </div>
-          </div>
+          </div> -->
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Up to Date</h3>
-              <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
+              <!-- <h3 class="mb-3">Up to Date</h3> -->
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Made with Love</h3>
-              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
+          <div class="col-lg-8">
+              <div class="">
+                
+                <!-- <h3 class="mb-3">Up to Date</h3> -->
+                <p class="text-muted mb-0 mt-5">
+                  Debaixo de um sol de no mínimo 50º graus de sensação térmica, dois ônibus, uma pergunta retórica, "Bora?", "Bora". 
+                  Era óbvio. Tão óbvio quanto começarmos esse tour por um museu. 
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                  Esse não é o único museu de Natal, mas é o único que aparece uma imagem de um bebê com hidrocefalia bem no topo das pesquisas, a gente tinha que visitar isso.                  
+                  Depois de decididos, precisávamos de duas informações:                  
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                  <b>Isso é pago?</b>                
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                    Não é pago. Absolutamente grátis.                       
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                    <b>Quando eu posso ir lá?</b>                
+                  </p>
+                  <p class="text-muted mb-0 mt-3">
+                      Segunda à sexta-feira: de 7h às 12h / 13h às 17h                     
+                  </p>
+                  <p class="text-muted mb-0 mt-3">
+                     (A partir de 10 pessoas, você precisa agendar por esse número: (84) 3342-2483)                    
+                  </p>
+                <p class="text-muted mb-0 mt-3"><b>Onde isso fica?</b></p>
+                  <p class="text-muted mb-0 mt-3">
+                      Acreditem, não foi fácil achar. Depois de dois dias tentando entender o mapa de Natal pelo google maps, conseguimos perceber que a região por trás da Salgado Filho, era a UFRN, o campus universitário que quase ninguém nota, devido ao seu tamanho pequeno.
+                      Sim, vou facilitar sua vida: <a href="https://www.google.com.br/maps/@-5.8421491,-35.2726925,12z">Localização do Museu.</a>                    
+                  </p>
+                    
+                  <p class="text-muted mb-0 mt-3">
+                    Você vai pegar algum ônibus que entre na UFRN. A gente desceu no Natal Shopping, atravessamos a passarela e pegamos o Circular Inverso.
+                    Então, só precisa descer na parada do CB (Centro de Biociências). Pergunte ao motorista, caso você não faça ideia de onde seja. Porque a partir disso é muito fácil; assim que descer, o prédio vai estar bem na sua frente.
+                  </p>
+
+                <p class="text-muted mb-0 mt-3">
+                    Na recepção do Museu, vão lhe pedir que assine seu nome, e esse é o único requisito que você precisa pra entrar no museu. Ter um nome. Sim, você pode inventar um nome falso, mas eu não faria isso se fosse você.                    
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                    Os bolsistas vão surgir, e vão lhe acompanhar em todo o percurso. Vão tirar suas dúvidas, e possivelmente julgar elas. 
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                  Não faria sentido eu continuar a descrição, por que afinal de contas você vai querer ir lá, não é mesmo? Tudo bem, pode ser que eu não lhe convenci a ir lá, nem é minha intenção; mas se você quer numa tarde dessas, ver algumas coisas curiosas como o crânio de uma Jubarte, que pesa 700kg (aquilo parecia ter 80 kg, eu me enganei), ou se você quer ver o coração de um ser humano (sim, a gente tem coração), e outras partes de um corpo humano, e uns bixos empalhados, eu acho que isso é melhor que ficar em casa. Principalmente você, que mora perto da UF, ou estuda por aí, não é muito esforço.
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                  Acho que outros museus de Natal merecem visita também, e certamente eles vão estar entrando no roteiro. Mas de toda forma, eu vou deixar umas imagens abaixo, contendo leves spoilers do que tem lá dentro.
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                  E sim, aqui o site do CB falando mais sobre o museu: <a href="http://www.cb.ufrn.br/sala_imprensa/noticias/20149983/o-museu-de-ciencias-morfologicas-da-ufrn-esta-entre-os-melhores-da-america-latina">Página do Museu</a>
+                </p>
+              </div>
             </div>
-          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box mt-5 mx-auto">
+                  <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+                  <!-- <h3 class="mb-3">Made with Love</h3> -->
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="">
+                  <!-- <h3 class="mb-3">Made with Love</h3> -->
+                  <p class="text-muted mb-0 mt-5">Algum comentário de Michelly caso ela não fique entediada com o passeio:</p>
+                  <p class="text-muted mb-0 mt-5">(Respeito máximo à essa área)</p>
+                  <blockquote class="quote-box">
+                    <p class="quotation-mark">
+                      “
+                    </p>
+                    <p class="quote-text">
+                      Em busca de lugares interessantes e baratos pra visitar nesta cidade Natawn, fiquei sabendo de um museu com fetos no formol. Certamente foi pro topo da lista de lugares pra ir.
+
+                      Vi o coração de uma baleia filhote (é um troço enorme); posso dizer que foi o ponto auge do passeio, e não paro de falar isso pra todo mundo que vejo, até porque, quem não se empolga com a ideia de um bebê sereia num pote?
+                      Visitem o museu de morfologia da UFRN.
+
+                      Foi um tour completo com direito a 3 guias e por tudo isso só foi gasto R$3,35: o preço do ônibus pra chegar até o museu.
+                      Eu gostei tanto disso que qualquer dia eu olho pra Luquinhas e pergunto "Bora?".
+                    </p>
+                    <hr>
+                    <div style="margin-left: 30px">
+                       Santiago, Michelly
+                      </p>
+                    </div>
+                  </blockquote>
+                
+                </div>
+            </div>
         </div>
       </div>
     </section>
@@ -131,103 +256,242 @@
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+              <a class="portfolio-box" href="img/museu_morfologia/coracao_baleia.jpg">
+                <img class="img-fluid" src="img/museu_morfologia/coracao_baleia.jpg" alt="">
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      Coração da Baleia Jubarte antes do formol deixar esse vidro todo escuro
+                    </div>
+                    <div class="project-name">
+                      <!-- Project Name -->
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/museu_morfologia/esqueleto.jpg">
+              <img class="img-fluid" src="img/museu_morfologia/esqueleto.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Adivinha qual o macaco
                   </div>
                   <div class="project-name">
-                    Project Name
+                    <!-- Project Name -->
                   </div>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+            <a class="portfolio-box" href="img/museu_morfologia/fetos.jpg">
+              <img class="img-fluid" src="img/museu_morfologia/fetos.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Fetos estranhos (o da direita tinha hidrocefalia)
                   </div>
                   <div class="project-name">
-                    Project Name
+                    <!-- Project Name -->
                   </div>
                 </div>
               </div>
             </a>
+          </div>         
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark text-white" id="pinacoteca">
+      <div class="container text-center">
+          <h2 class="section-heading text-white">Pinacoteca</h2>
+
+        <!-- <h3 class="mb-4">ALgumas imagens aleatórias que serão substituídas, claramente.</h3> -->
+        <!-- <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a> -->
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Como é que é lá?</h2>
+            <hr class="my-4">
           </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Sturdy Templates</h3>
+              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Ready to Ship</h3>
+              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+            </div>
+          </div> -->
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
+              <!-- <h3 class="mb-3">Up to Date</h3> -->
+            </div>
+          </div>
+          <div class="col-lg-8">
+              <div class="">
+                
+                <!-- <h3 class="mb-3">Up to Date</h3> -->
+                <p class="text-muted mb-0 mt-5">
+                  A gente já tinha pensado em ir lá. Umas duas semanas antes, num fim de semana, mas adiamos. O motivo é justo, e uma pena, a Ribeira é um lugar triste de perigoso nos sábados e domingos. Pouca gente na rua; eu recomendaria a vocês darem uma fugida dos compromissos no meio da semana pra conhecer o lugar.  
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                  Certamente você vai me dizer, "Ah, Lucas mas a pinacoteca nem é um lugar tão desconhecido assim". E eu vou dizer, verdade, mas a gente queria ir mesmo assim. Vocẽ só deve saber de antemão que a pinacoteca já foi a sede do governo do estado do RN, no século 20; e talvez você já suspeitasse disso por que quase todas as pinacotecas são casas de governo que viraram história.                  
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                  <b>Isso é pago?</b>                
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                    Não é pago. Absolutamente grátis.                       
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                    <b>Quando eu posso ir lá?</b>                
+                  </p>
+                  <p class="text-muted mb-0 mt-3">
+                      Segunda à sexta-feira: de 7h às 12h / 13h às 17h                     
+                  </p>
+                  <p class="text-muted mb-0 mt-3">
+                     (A partir de 10 pessoas, você precisa agendar por esse número: (84) 3342-2483)                    
+                  </p>
+                <p class="text-muted mb-0 mt-3"><b>Onde isso fica?</b></p>
+                  <p class="text-muted mb-0 mt-3">
+                      Acreditem, não foi fácil achar. Depois de dois dias tentando entender o mapa de Natal pelo google maps, conseguimos perceber que a região por trás da Salgado Filho, era a UFRN, o campus universitário que quase ninguém nota, devido ao seu tamanho pequeno.
+                      Sim, vou facilitar sua vida: <a href="https://www.google.com.br/maps/@-5.8421491,-35.2726925,12z">Localização do Museu.</a>                    
+                  </p>
+                    
+                  <p class="text-muted mb-0 mt-3">
+                    Você vai pegar algum ônibus que entre na UFRN. A gente desceu no Natal Shopping, atravessamos a passarela e pegamos o Circular Inverso.
+                    Então, só precisa descer na parada do CB (Centro de Biociências). Pergunte ao motorista, caso você não faça ideia de onde seja. Porque a partir disso é muito fácil; assim que descer, o prédio vai estar bem na sua frente.
+                  </p>
+
+                <p class="text-muted mb-0 mt-3">
+                    Na recepção do Museu, vão lhe pedir que assine seu nome, e esse é o único requisito que você precisa pra entrar no museu. Ter um nome. Sim, você pode inventar um nome falso, mas eu não faria isso se fosse você.                    
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                    Os bolsistas vão surgir, e vão lhe acompanhar em todo o percurso. Vão tirar suas dúvidas, e possivelmente julgar elas. 
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                  Não faria sentido eu continuar a descrição, por que afinal de contas você vai querer ir lá, não é mesmo? Tudo bem, pode ser que eu não lhe convenci a ir lá, nem é minha intenção; mas se você quer numa tarde dessas, ver algumas coisas curiosas como o crânio de uma Jubarte, que pesa 700kg (aquilo parecia ter 80 kg, eu me enganei), ou se você quer ver o coração de um ser humano (sim, a gente tem coração), e outras partes de um corpo humano, e uns bixos empalhados, eu acho que isso é melhor que ficar em casa. Principalmente você, que mora perto da UF, ou estuda por aí, não é muito esforço.
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                  Acho que outros museus de Natal merecem visita também, e certamente eles vão estar entrando no roteiro. Mas de toda forma, eu vou deixar umas imagens abaixo, contendo leves spoilers do que tem lá dentro.
+                </p>
+                <p class="text-muted mb-0 mt-3">
+                  E sim, aqui o site do CB falando mais sobre o museu: <a href="http://www.cb.ufrn.br/sala_imprensa/noticias/20149983/o-museu-de-ciencias-morfologicas-da-ufrn-esta-entre-os-melhores-da-america-latina">Página do Museu</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box mt-5 mx-auto">
+                  <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+                  <!-- <h3 class="mb-3">Made with Love</h3> -->
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="">
+                  <!-- <h3 class="mb-3">Made with Love</h3> -->
+                  <p class="text-muted mb-0 mt-5">Algum comentário de Michelly caso ela não fique entediada com o passeio:</p>
+                  <p class="text-muted mb-0 mt-5">(Respeito máximo à essa área)</p>
+                  <blockquote class="quote-box">
+                    <p class="quotation-mark">
+                      “
+                    </p>
+                    <p class="quote-text">
+                      Em busca de lugares interessantes e baratos pra visitar nesta cidade Natawn, fiquei sabendo de um museu com fetos no formol. Certamente foi pro topo da lista de lugares pra ir.
+
+                      Vi o coração de uma baleia filhote (é um troço enorme); posso dizer que foi o ponto auge do passeio, e não paro de falar isso pra todo mundo que vejo, até porque, quem não se empolga com a ideia de um bebê sereia num pote?
+                      Visitem o museu de morfologia da UFRN.
+
+                      Foi um tour completo com direito a 3 guias e por tudo isso só foi gasto R$3,35: o preço do ônibus pra chegar até o museu.
+                      Eu gostei tanto disso que qualquer dia eu olho pra Luquinhas e pergunto "Bora?".
+                    </p>
+                    <hr>
+                    <div style="margin-left: 30px">
+                       Santiago, Michelly
+                      </p>
+                    </div>
+                  </blockquote>
+                
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
+              <a class="portfolio-box" href="img/pinacoteca/eu_quadros.jpg">
+                <img class="img-fluid" src="img/pinacoteca/eu_quadros.jpg" alt="">
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      Coração da Baleia Jubarte antes do formol deixar esse vidro todo escuro
+                    </div>
+                    <div class="project-name">
+                      <!-- Project Name -->
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a class="portfolio-box" href="iimg/pinacoteca/bicicleta.jpg">
+                  <img class="img-fluid" src="img/pinacoteca/bicicleta.jpg" alt="">
+                  <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                      <div class="project-category text-faded">
+                        Fetos estranhos (o da direita tinha hidrocefalia)
+                      </div>
+                      <div class="project-name">
+                        <!-- Project Name -->
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div> 
           <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+            <a class="portfolio-box" href="img/pinacoteca/mesa_quadro.jpg">
+              <img class="img-fluid" src="img/pinacoteca/mesa_quadro.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Category
+                    Adivinha qual o macaco
                   </div>
                   <div class="project-name">
-                    Project Name
+                    <!-- Project Name -->
                   </div>
                 </div>
               </div>
             </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
+          </div>                  
         </div>
       </div>
     </section>
 
     <section class="bg-dark text-white">
       <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+        <!-- <h3 class="mb-4">ALgumas imagens aleatórias que serão substituídas, claramente.</h3> -->
+        <!-- <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a> -->
       </div>
     </section>
 
@@ -235,20 +499,21 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <h2 class="section-heading">Se por um acaso mais pessoas gostarem disso a gente vai precisar deixar o contato não é mesmo?</h2>
             <hr class="my-4">
-            <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            <!-- <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p> -->
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>123-456-6789</p>
+            <p>(84) 98891-5070</p>
+            <p>Um número (não o meu já que já devo ter sido assaltado a essa altura)</p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
             <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
+              <a href="mailto:thisisnatown@gmail.com">thisisnatown@gmail.com</a>
             </p>
           </div>
         </div>
@@ -270,3 +535,13 @@
   </body>
 
 </html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117277263-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117277263-1');
+</script>
