@@ -1,537 +1,530 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Eu sou Lucas de Lima</title>
 
-  <head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="img/thisisnatown.png" type="image/x-icon" />
+    <link href='css/bootstrap.css' rel='stylesheet' />
+    <link href='css/title.css' rel='stylesheet' />
 
-    <title>This is Natown</title>
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--     <link href='css/ct-navbar.css' rel='stylesheet' /> -->
+    <link href='css/rotating-card.css' rel='stylesheet' />
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/creative.min.css" rel="stylesheet">
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <style>        
+        body{            
+            /* margin-top: 100px; */
+        }
+        .navbar-default .navbar-nav > li > a{
+            padding: 15px 15px;
+            margin: 5px 0;
+        }
 
-    <style>
-    .img-fluid {
-      height: 317px;
-      width: 451px
-    }
-    @media only screen and (max-width: 600px) {
-      .col-lg-8 {
-          text-align: center;
-      }
-    }
+        .navbar-default{
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-color: transparent;
+            box-shadow: 0 0px 13px rgba(0,0,0,.2);
+        }
+        .btn-info,
+        .btn-info:hover,
+        .btn-info:focus{
+            color: #FFF !important;
+            background-color: #00bbff !important;
+            border-color: #00bbff !important;
+        }
 
-    blockquote{
-    border-left:none
-    }
-
-    .quote-badge{
-        background-color: gray;   
-    }
-
-    .quote-box{        
-        overflow: hidden;
-        margin-top: -50px;
-        padding-top: -100px;
-        border-radius: 7px;
-        background-color:darkgray;
-        margin-top: 25px;
-        color:white;
-        /* width: 325px; */
-        box-shadow: 2px 2px 2px 2px #E0E0E0;
-        
-    }
-
-    .quotation-mark{        
-        margin-top: -10px;
-        margin-left: 20px;
-        font-weight: bold;
-        font-size:100px;
-        color:white;
-        font-family: "Times New Roman", Georgia, Serif;
-        
-    }
-
-    .quote-text{        
-        font-size: 19px;
-        margin-top: -65px;
-        margin-left: 30px;
-        margin-right: 30px;
-    }    
+        .btn-info{
+            opacity: .8;
+            transition: all 0.1s;
+            -webkit-transition: all 0.1s;
+        }
+        .btn-info:hover,
+        .btn-info:focus{
+            opacity: 1;
+        }
+        .iconify { width: 50px; height: 50px; }
     </style>
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <img height="100px" src="img/thisisnatown.png" alt="">
-        </a>
-        <div class="dropdown">
-            <a class="dropdown-toggle" style="cursor: pointer" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Lugares
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="nav-link js-scroll-trigger" href="#morfologia">morfologia</a>
-              <a class="nav-link js-scroll-trigger" href="#pinacoteca">Pinacoteca</a>
-            </div>
-          </div>
-      </div>
-      
-    </nav>
-
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h2 class="font-italic">
-              <strong>Um passeio pelos lugares escondidos dessa cidade</strong>
-            </h2>
-            <!-- <hr> -->
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <!-- <p class="text-faded mb-5"> Um passeio pelos lugares escondidos dessa cidade</p> -->
-            <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#morfologia">Find Out More</a> -->
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <section class="bg-primary" id="morfologia">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">Museu de Morfologia</h2>
-            <!-- <p class="text-faded mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p> -->
-            <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Como é que é lá?</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <!-- <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Sturdy Templates</h3>
-              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Ready to Ship</h3>
-              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
-            </div>
-          </div> -->
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
-              <!-- <h3 class="mb-3">Up to Date</h3> -->
-            </div>
-          </div>
-          <div class="col-lg-8">
-              <div class="">
-                
-                <!-- <h3 class="mb-3">Up to Date</h3> -->
-                <p class="text-muted mb-0 mt-5">
-                  Debaixo de um sol de no mínimo 50º graus de sensação térmica, dois ônibus, uma pergunta retórica, "Bora?", "Bora". 
-                  Era óbvio. Tão óbvio quanto começarmos esse tour por um museu. 
-                </p>
-                <p class="text-muted mb-0 mt-3">
-                  Esse não é o único museu de Natal, mas é o único que aparece uma imagem de um bebê com hidrocefalia bem no topo das pesquisas, a gente tinha que visitar isso.                  
-                  Depois de decididos, precisávamos de duas informações:                  
-                </p>
-                <p class="text-muted mb-0 mt-3">
-                  <b>Isso é pago?</b>                
-                </p>
-                <p class="text-muted mb-0 mt-3">
-                    Não é pago. Absolutamente grátis.                       
-                </p>
-                <p class="text-muted mb-0 mt-3">
-                    <b>Quando eu posso ir lá?</b>                
-                  </p>
-                  <p class="text-muted mb-0 mt-3">
-                      Segunda à sexta-feira: de 7h às 12h / 13h às 17h                     
-                  </p>
-                  <p class="text-muted mb-0 mt-3">
-                     (A partir de 10 pessoas, você precisa agendar por esse número: (84) 3342-2483)                    
-                  </p>
-                <p class="text-muted mb-0 mt-3"><b>Onde isso fica?</b></p>
-                  <p class="text-muted mb-0 mt-3">
-                      Acreditem, não foi fácil achar. Depois de dois dias tentando entender o mapa de Natal pelo google maps, conseguimos perceber que a região por trás da Salgado Filho, era a UFRN, o campus universitário que quase ninguém nota, devido ao seu tamanho pequeno.
-                      Sim, vou facilitar sua vida: <a href="https://www.google.com.br/maps/@-5.8421491,-35.2726925,12z">Localização do Museu.</a>                    
-                  </p>
-                    
-                  <p class="text-muted mb-0 mt-3">
-                    Você vai pegar algum ônibus que entre na UFRN. A gente desceu no Natal Shopping, atravessamos a passarela e pegamos o Circular Inverso.
-                    Então, só precisa descer na parada do CB (Centro de Biociências). Pergunte ao motorista, caso você não faça ideia de onde seja. Porque a partir disso é muito fácil; assim que descer, o prédio vai estar bem na sua frente.
-                  </p>
-
-                <p class="text-muted mb-0 mt-3">
-                    Na recepção do Museu, vão lhe pedir que assine seu nome, e esse é o único requisito que você precisa pra entrar no museu. Ter um nome. Sim, você pode inventar um nome falso, mas eu não faria isso se fosse você.                    
-                </p>
-                <p class="text-muted mb-0 mt-3">
-                    Os bolsistas vão surgir, e vão lhe acompanhar em todo o percurso. Vão tirar suas dúvidas, e possivelmente julgar elas. 
-                </p>
-                <p class="text-muted mb-0 mt-3">
-                  Não faria sentido eu continuar a descrição, por que afinal de contas você vai querer ir lá, não é mesmo? Tudo bem, pode ser que eu não lhe convenci a ir lá, nem é minha intenção; mas se você quer numa tarde dessas, ver algumas coisas curiosas como o crânio de uma Jubarte, que pesa 700kg (aquilo parecia ter 80 kg, eu me enganei), ou se você quer ver o coração de um ser humano (sim, a gente tem coração), e outras partes de um corpo humano, e uns bixos empalhados, eu acho que isso é melhor que ficar em casa. Principalmente você, que mora perto da UF, ou estuda por aí, não é muito esforço.
-                </p>
-                <p class="text-muted mb-0 mt-3">
-                  Acho que outros museus de Natal merecem visita também, e certamente eles vão estar entrando no roteiro. Mas de toda forma, eu vou deixar umas imagens abaixo, contendo leves spoilers do que tem lá dentro.
-                </p>
-                <p class="text-muted mb-0 mt-3">
-                  E sim, aqui o site do CB falando mais sobre o museu: <a href="http://www.cb.ufrn.br/sala_imprensa/noticias/20149983/o-museu-de-ciencias-morfologicas-da-ufrn-esta-entre-os-melhores-da-america-latina">Página do Museu</a>
-                </p>
-              </div>
+        
+</head>
+<div class="container">   
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="title">
+                <!-- Lucas de Lima é um desenvolvedor web completo -->
+                <a href="#" id="logo">Lucas de Lima</a> é um web desenvolvedor   
+                <!-- <small>Lucas de Lima is a dev web</small> -->
+                <div class="pull-right">
+                    <a style="text-decoration: none;" href="https://api.whatsapp.com/send?phone=5584988915070&text=Ol%C3%A1%2C%20me%20procura%20pelos%20meus%20servi%C3%A7os%20de%20desenvolvedor%3F%20Pode%20deixar%20uma%20mensagem%20que%20te%20retorno%20assim%20que%20poss%C3%ADvel." target="_blank">
+                        <span class="iconify" data-icon="fa-brands:whatsapp-square" data-inline="false"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="https://www.facebook.com/lucas.delima.5076" target="_blank">
+                        <span class="iconify" data-icon="ant-design:facebook-filled" data-inline="false"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="https://www.linkedin.com/in/lucas-lima-3b99b5133/" target="_blank">
+                        <span class="iconify" data-icon="ant-design:linkedin-filled" data-inline="false"></span>
+                    </a>
+                    <a style="text-decoration: none;" href="https://github.com/LucasLimakxy" target="_blank">
+                        <span class="iconify" data-icon="ant-design:github-filled" data-inline="false"></span>
+                    </a>
+                </div>                
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box mt-5 mx-auto">
-                  <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-                  <!-- <h3 class="mb-3">Made with Love</h3> -->
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <div class="">
-                  <!-- <h3 class="mb-3">Made with Love</h3> -->
-                  <p class="text-muted mb-0 mt-5">Algum comentário de Michelly caso ela não fique entediada com o passeio:</p>
-                  <p class="text-muted mb-0 mt-5">(Respeito máximo à essa área)</p>
-                  <blockquote class="quote-box">
-                    <p class="quotation-mark">
-                      “
-                    </p>
-                    <p class="quote-text">
-                      Em busca de lugares interessantes e baratos pra visitar nesta cidade Natawn, fiquei sabendo de um museu com fetos no formol. Certamente foi pro topo da lista de lugares pra ir.
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="col-md-4 col-sm-6">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <div class="header">
+                                <h5 class="motto">
+                                    <i>Prazer em te conhecer, eu sou um especialista em <b>back-end</b> e entusiasta
+                                         de <b>infraestrutura de servidores</b>.
+                                    </i>
+                                </h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h4 class="text-center">Tecnologias favoritas</h4>
+                                    <!-- <p class="text-center">Sou um desenvolvedor web graduado em análise de sistemas, e com uma vasta experiência de mais de 5 anos no universo dos códigos.</p> -->
+                                    <div class="social-links text-center">
+                                        <a href="https://www.javascript.com/" target="_blanck" title="JavaScript"><img src="https://img.icons8.com/color/48/000000/javascript.png"/></a>
+                                        <a href="https://www.python.org/" target="_blank" title="Python"><img src="https://img.icons8.com/color/48/000000/python.png"/></a>
+                                        <!-- <a href="https://creative-tim.com" ><img src="https://img.icons8.com/officel/40/000000/php-logo.png"/></a> -->
+                                        <a href="https://www.djangoproject.com/" target="_blank" title="Django/Python"><img src="https://img.icons8.com/color/48/000000/django.png"/></a>
+                                        <a href="https://laravel.com/" target="_blank" title="Laravel/PHP"><img src="https://img.icons8.com/windows/32/000000/laravel.png"/></a>
+                                        <a href="https://www.docker.com/" target="_blank" title="Docker"><img src="https://img.icons8.com/color/48/000000/docker.png"/></a>
+                                        <a href="https://git-scm.com/" target="_blank" title="Git"><img src="https://img.icons8.com/color/48/000000/git.png"/></a>
+                                        <a href="https://www.postgresql.org/" target="_blank" title="PostgreSQL"><img src="https://img.icons8.com/color/48/000000/postgreesql.png"/></a>
+                                        <a href="https://redis.io/" target="_blank" title="Redis"><img src="https://img.icons8.com/color/48/000000/redis.png"/></a>
+                                        <a href="https://www.linux.org/" target="_blank" title="Linux"><img src="https://img.icons8.com/color/48/000000/linux.png"/></a>
+                                        <a href="https://www.php.net/" target="_blanck" title="PHP"><img src="https://img.icons8.com/ios-filled/50/000000/php-logo.png"/></a>
+                                        <a href="https://angularjs.org/" target="_blank" title="AngularJS"><img src="https://img.icons8.com/color/48/000000/angularjs.png"/></a>
+                                        <a href="https://vuejs.org/" target="_blank" title="VueJS"><img src="https://img.icons8.com/color/48/000000/vue-js.png"/></a>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <table style="width: 100%; font-size: 12px;">
+                                    <tr >
+                                        <td ><span style="width: 25px; height: 20px" class="iconify" data-icon="si-glyph:congratulation-hat" data-inline="false"></span><u><b style="cursor: pointer;" title="Formado como Técnico em Informática">T.I</b></u> | 2011-2015 (<i>IFRN ZN</i>) </td>
+                                    </tr>
+                                    <tr >                                            
+                                        <td><span style="width: 25px; height: 20px" class="iconify" data-icon="si-glyph:congratulation-hat" data-inline="false"></span><u><b style="cursor: pointer;" title="Graduado em Tecnologia em Analise e Desenvolvimento de Sistemas">TADS</b></u> | 2015-2020 (<i>IFRN CNAT</i>)</td>
+                                    </tr>
+                                </table>  
+                                     
+                            </div>
+                        </div> <!-- end back panel -->
+                    </div> <!-- end card -->
+                </div> <!-- end card-container -->
+            </div> <!-- end col sm 3 -->
+    <!--         <div class="col-sm-1"></div> -->
+                <!--         <div class="col-sm-1"></div> -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <!-- <div class="cover">
+                                <img src="images/rotating_card_thumb3.png"/>
+                            </div> -->
+                            <div class="header">
+                                <h5 class="motto"><i>Esse é um dos meus primeiros times no universo <b>web</b>.</i></h5>
+                            </div>
+                            <div style="height: 65px;" class="social-links text-center">
+                                <!-- <a href=""><img src="https://img.icons8.com/ios/50/000000/django.png"/></a> -->
+                                <a href="https://framework.zend.com/" target="_blank" title="Zend Framework/PHP"><span class="iconify" data-icon="logos-zend-framework" data-inline="false"></span></a>
+                                
+                                <!-- <img class="img-circle" src="images/rotating_card_profile2.png"/> -->
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">S.I.M</h3>
+                                    <p class="profession">INTERDEV</p>
 
-                      Vi o coração de uma baleia filhote (é um troço enorme); posso dizer que foi o ponto auge do passeio, e não paro de falar isso pra todo mundo que vejo, até porque, quem não se empolga com a ideia de um bebê sereia num pote?
-                      Visitem o museu de morfologia da UFRN.
+                                    <p class="text-center">É um Sistema Integrado de Gestão Empresarial especializado nas federações das indústrias. </p>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" onclick="rotateCard(this)">
+                                        <i class="fa fa-mail-forward"></i> Saiba mais sobre isso
+                                    </button>
+                                </div>
+                            </div>
+                        </div> <!-- end front panel -->
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">Fui um estagiário nível médio, encarregado também de pegar café.</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <!-- <h4 class="text-center">Job Description</h4> -->
+                                    <p class="text-justify">Obtive minhas primeiras noções sobre um sistema <b>WEB</b>, versionamento de código e sobre o uso de framework <b>MVC</b>.
+                                        Criei novas funcionalidades, trabalhei em correções de <i>bugs</i>.  
+                                        Tive bastante contato com <b>front-end</b>, sobretudo com <i><b>Javascript</b></i>.
+                                    </p>
 
-                      Foi um tour completo com direito a 3 guias e por tudo isso só foi gasto R$3,35: o preço do ônibus pra chegar até o museu.
-                      Eu gostei tanto disso que qualquer dia eu olho pra Luquinhas e pergunto "Bora?".
-                    </p>
-                    <hr>
-                    <div style="margin-left: 30px">
-                       Santiago, Michelly
-                      </p>
-                    </div>
-                  </blockquote>
-                
-                </div>
-            </div>
-        </div>
-      </div>
-    </section>
+                                    <div class="stats-container">
+                                        <div class="stats">
+                                            <h5>JAN/15</h5>
+                                            <p>
+                                                De
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <h5>JAN/16</h5>
+                                            <p>
+                                                Até
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <h5>12</h5>
+                                            <p>
+                                                Meses
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="social-links text-center">
+                                        <!-- <a href=""><img src="https://img.icons8.com/color/48/000000/css-filetype.png"/></a> -->
+                                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" title="HTML5"><img src="https://img.icons8.com/color/48/000000/html-5.png"/></a>                                        
+                                        <a href="https://www.javascript.com/" target="_blanck" title="JavaScript"><img src="https://img.icons8.com/color/48/000000/javascript.png"/></a>
+                                        <!-- <a href=""><img src="https://img.icons8.com/windows/50/000000/laravel.png"/></a> -->
+                                        <a href="https://www.php.net/" target="_blanck" title="PHP"><img src="https://img.icons8.com/officexs/64/000000/php-logo.png"/></span></a>
+                                        <!-- <a href=""><img src="https://img.icons8.com/ios-filled/50/000000/mysql-logo.png"/></a> -->
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="footer">
+                                <div class="social-links text-center">
+                                    <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                        <i class="fa fa-reply"></i> Voltar
+                                    </button>                                   
+                                </div>
+                            </div>
+                        </div> <!-- end back panel -->
+                    </div> <!-- end card -->
+                </div> <!-- end card-container -->
+            </div> <!-- end col-sm-3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <!-- <div class="cover"> -->
+                                <!-- <img src="images/rotating_card_thumb.png"/> -->
+                            <!-- </div> -->
+                            <div class="header">
+                                <h5 class="motto"><i>Tive o prazer de colaborar com o <b>LAIS</b> para tornar a saúde mais acessível.</i></h5>
+                            </div>
+                            <div style="height: 65px;" class="social-links text-center">
+                                <a href="https://laravel.com/" target="_blank" title="Laravel/PHP"><span class="iconify" data-icon="logos:laravel" data-inline="false"></span></a>
+                                <!-- <img class="img-circle" src="images/rotating_card_profile2.png"/> -->
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">SMART</h3>
+                                    <p class="profession">LAIS/HUOL/UFRN</p>
+                                    <p class="text-center">É um Sistema de Monitoramento e Avaliação dos Resultados do Programa Telessaúde.</p>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" onclick="rotateCard(this)">
+                                        <i class="fa fa-mail-forward"></i> Saiba mais sobre isso
+                                    </button>
+                                </div>
+                            </div>
+                        </div> <!-- end front panel -->
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">Fui um bolsista de nível superior, pelo curso de TADS.</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <!-- <h4 class="text-center">Job Description</h4> -->
+                                    <p class="text-justify">Trabalhei na transcrição de uma plataforma já consolidada: de <b><i>Django</i></b> para <b><i>Laravel</i></b>. 
+                                        Foi meu primeiro contato com API REST e onde consolidei o conceito de <b>Migrations</b>. Construí diversas
+                                        Views, Models e Templates que hoje já se encontra em produção.</p>
 
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-              <a class="portfolio-box" href="img/museu_morfologia/coracao_baleia.jpg">
-                <img class="img-fluid" src="img/museu_morfologia/coracao_baleia.jpg" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                      Coração da Baleia Jubarte antes do formol deixar esse vidro todo escuro
-                    </div>
-                    <div class="project-name">
-                      <!-- Project Name -->
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/museu_morfologia/esqueleto.jpg">
-              <img class="img-fluid" src="img/museu_morfologia/esqueleto.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Adivinha qual o macaco
-                  </div>
-                  <div class="project-name">
-                    <!-- Project Name -->
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/museu_morfologia/fetos.jpg">
-              <img class="img-fluid" src="img/museu_morfologia/fetos.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Fetos estranhos (o da direita tinha hidrocefalia)
-                  </div>
-                  <div class="project-name">
-                    <!-- Project Name -->
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>         
-        </div>
-      </div>
-    </section>
+                                    <div class="stats-container">
+                                        <div class="stats">
+                                            <h5>MAR/17</h5>
+                                            <p>
+                                                De
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <h5>AGO/18</h5>
+                                            <p>
+                                                Até
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <h5>17</h5>
+                                            <p>
+                                                Meses
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="social-links text-center">
+                                        <a href=""><img src="https://img.icons8.com/color/48/000000/css-filetype.png"/></a>
+                                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" title="HTML5"><img src="https://img.icons8.com/color/48/000000/html-5.png"/></a>
+                                        <a href="https://www.javascript.com/" target="_blanck" title="JavaScript"><img src="https://img.icons8.com/color/48/000000/javascript.png"/></a>
+                                        <!-- <a href=""><img src="https://img.icons8.com/windows/50/000000/laravel.png"/></a> -->
+                                        <a href="https://www.php.net/" target="_blanck" title="PHP"><img src="https://img.icons8.com/officexs/64/000000/php-logo.png"/></span></a>
+                                        <!-- <a href=""><img src="https://img.icons8.com/ios-filled/50/000000/mysql-logo.png"/></a> -->
+                                    </div>
 
-    <section class="bg-dark text-white" id="pinacoteca">
-      <div class="container text-center">
-          <h2 class="section-heading text-white">Pinacoteca</h2>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                    <i class="fa fa-reply"></i> Voltar
+                                </button>
+                                <!-- <div class="social-links text-center">
+                                    <a href=""><img src="https://img.icons8.com/officel/30/000000/css-filetype.png"/></a>
+                                    <a href=""><img src="https://img.icons8.com/officexs/30/000000/html-filetype.png"/></a>
+                                </div> -->
+                            </div>
+                        </div> <!-- end back panel -->
+                    </div> <!-- end card -->
+                </div> <!-- end card-container -->
+            </div> <!-- end col sm 3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <!-- <div class="cover"> -->
+                                <!-- <img src="images/rotating_card_thumb.png"/> -->
+                            <!-- </div> -->
+                            <div class="header">
+                                <h5 class="motto"><i>Nesse time me envolvi no mundo da tecnologia a favor da <b>educação</b>.</i></h5>
+                            </div>
+                            <div style="height: 65px;" class="social-links text-center">
+                                <a href="https://www.djangoproject.com/" target="_blank" title="Django/Python"><span class="iconify" data-icon="logos:django" data-inline="false"></span></span></a>
+                                <!-- <img class="img-circle" src="images/rotating_card_profile2.png"/> -->
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">SAGA</h3>
+                                    <p class="profession">AGIL SISTEMAS</p>
+                                    <p class="text-center">É um Sistema Ágil de Gestão em Aprendizagem utilizado na área da educação .</p>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" onclick="rotateCard(this)">
+                                        <i class="fa fa-mail-forward"></i> Saiba mais sobre isso
+                                    </button>
+                                </div>
+                            </div>
+                        </div> <!-- end front panel -->
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">Fui um estagiário de nível superior e gerente do projeto.</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <!-- <h4 class="text-center">Job Description</h4> -->
+                                    <p class="text-justify">
+                                        Implementei novos módulos no projeto e dei suporte em correções de bugs.
+                                        Foi o meu primeiro contato com <b><i>Django</b></i>, e também onde desenvolvi habilidades
+                                        com <i>infraestrutura de servidores</i>, <i>deploy</i> e <i>gerenciamento de banco de dados</i> (<b><i>Postgres</i></b>). 
+                                    </p>
 
-        <!-- <h3 class="mb-4">ALgumas imagens aleatórias que serão substituídas, claramente.</h3> -->
-        <!-- <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a> -->
-      </div>
-    </section>
+                                    <div class="stats-container">
+                                        <div class="stats">
+                                            <h5>JAN/18</h5>
+                                            <p>
+                                                De
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <h5>NOV/19</h5>
+                                            <p>
+                                                Até
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <h5>22</h5>
+                                            <p>
+                                                Meses
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="social-links text-center">
+                                        <a href="https://www.postgresql.org/" target="_blank" title="PostgreSQL"><img src="https://img.icons8.com/color/48/000000/postgreesql.png"/></a>
+                                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" title="HTML5"><img src="https://img.icons8.com/color/48/000000/html-5.png"/></a>
+                                        <a href="https://www.python.org/" target="_blank" title="Python"><img src="https://img.icons8.com/color/48/000000/python.png"/></a>
+                                        <a href="https://vuejs.org/" target="_blank" title="VueJS"><img src="https://img.icons8.com/color/48/000000/vue-js.png"/></a>
+                                        <!-- <a href=""><img src="https://img.icons8.com/ios-filled/50/000000/mysql-logo.png"/></a> -->
+                                    </div>
 
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Como é que é lá?</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <!-- <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Sturdy Templates</h3>
-              <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Ready to Ship</h3>
-              <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
-            </div>
-          </div> -->
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
-              <!-- <h3 class="mb-3">Up to Date</h3> -->
-            </div>
-          </div>
-          <div class="col-lg-8">
-              <div class="">
-                
-                <!-- <h3 class="mb-3">Up to Date</h3> -->
-                <p class="text-muted mb-0 mt-5">
-                  Antes de a gente ir na Pinacoteca, coisa que eu nunca tinha feito, me questionei de onde vinha esse nome, que até parece com "Cinemateca", mas essa é o próximo lugar que a gente vai falar (o que não passa de uma coincidência).  
- 
-             	 </p>
-                <p class="text-muted mb-0 mt-3">
-                  Certamente você vai me dizer, "Ah, Lucas mas a pinacoteca nem é um lugar tão desconhecido assim". E eu vou dizer, verdade, mas a gente queria ir mesmo assim. Vocẽ só deve saber de antemão que a pinacoteca já foi a sede do governo do estado do RN, no século 20; e talvez você já suspeitasse disso por que quase todas as pinacotecas são casas de governo que viraram história.                  
-                </p>
-                <p class="text-muted mb-0 mt-3">
-                  <b>Isso é pago?</b>                
-                </p>
-                <p class="text-muted mb-0 mt-3">
-                    Não é pago. Absolutamente grátis.                       
-                </p>
-                <p class="text-muted mb-0 mt-3">
-                    <b>Quando eu posso ir lá?</b>                
-                  </p>
-                  <p class="text-muted mb-0 mt-3">
-                      Segunda à sexta-feira: de 7h às 12h / 13h às 17h                     
-                  </p>
-                  <p class="text-muted mb-0 mt-3">
-                     (A partir de 10 pessoas, você precisa agendar por esse número: (84) 3342-2483)                    
-                  </p>
-                <p class="text-muted mb-0 mt-3"><b>Onde isso fica?</b></p>
-                  <p class="text-muted mb-0 mt-3">
-                      A Pinacoteca é muito fácil de se encontrar, e dessa vez não vamos deixar o link, o google vai lhe ajudar. Sim, a gente tá meio abusado, mas não desista, acho que esse passeio vale a pena pra você.                
-                  </p>
-                    
-                  <p class="text-muted mb-0 mt-3">
-                    Supondo que você conseguiu chegar lá, usando seu celular, ou até perguntando em cada esquina, pode entrar, não paga mesmo.
-                  </p>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                    <i class="fa fa-reply"></i> Voltar
+                                </button>
+                                <!-- <div class="social-links text-center">
+                                    <a href=""><img src="https://img.icons8.com/officel/30/000000/css-filetype.png"/></a>
+                                    <a href=""><img src="https://img.icons8.com/officexs/30/000000/html-filetype.png"/></a>
+                                </div> -->
+                            </div>
+                        </div> <!-- end back panel -->
+                    </div> <!-- end card -->
+                </div> <!-- end card-container -->
+            </div> <!-- end col sm 3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <!-- <div class="cover"> -->
+                                <!-- <img src="images/rotating_card_thumb.png"/> -->
+                            <!-- </div> -->
+                            <div class="header">
+                                <h5 class="motto"><i>Volto para a área da saúde já mais amadurecido no universo <b>Web</b>.</i></h5>
+                            </div>
+                            <div style="height: 65px;" class="social-links text-center">
+                                <a href="https://www.djangoproject.com/" target="_blank" title="Django/Python"><span class="iconify" data-icon="logos:django" data-inline="false"></span></a>
+                                <!-- <img class="img-circle" src="images/rotating_card_profile2.png"/> -->
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">CONCEIVE</h3>
+                                    <p class="profession">INTESOFTWARE</p>
+                                    <p class="text-center">Sistema de Gestão de Atendimentos Médicos e Faturamentos Clínicos utilizado na área da saúde.</p>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" onclick="rotateCard(this)">
+                                        <i class="fa fa-mail-forward"></i> Saiba mais sobre isso
+                                    </button>
+                                </div>
+                            </div>
+                        </div> <!-- end front panel -->
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">Sou um contratado de nível Sênior e participante ativo do planejamento.</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <!-- <h4 class="text-center">Job Description</h4> -->
+                                    <p class="text-justify">Consolido e ponho à prova todos meus conhecimentos em gerir/configurar
+                                        servidores <b>Linux</b>, gerenciar <i>DB's <b>Postgres/Mysql/SqlServer</b></i>, trabalhar 
+                                        com virtualizações (<b>Virtualenv/Pyenv</b>), 
+                                        processos em fila (<b>Redis</b>), <i>deploy</i> e, sobretudo, codificar com <b>Django</b>.       
 
-                <p class="text-muted mb-0 mt-3">
-                    Você pode assinar uma ata de visita diária, mas não vão ter guias, você vai tá por conta própria num prédio de um andar e completo chão de madeira.                   
-                </p>
-                <p class="text-muted mb-0 mt-3">
-                  Esse é o momento que você começa o seu passeio. A casa não é grande eu confesso, se você quiser passar um tempo sentado nas cadeiras lá do primeiro andar isso vai prolongar sua visita em 200%, não tenha dúvida; mas cuidado com os móveis, apesar da mesa da sala principal parecer mais nova que a da sua casa, já é uma guerreira centenária. Você vai encontrar lá nos cômodos, desde obras de arte estranhas até à mobilhas da época dos governos do século XX. Uma sala com um quadro para cada governador do estado até hoje (somando um total de uma mulher).
-                </p>
-                <p class="text-muted mb-0 mt-3">
-                  Se eu não consegui lhe convencer até aqui, acho que não consigo mais. A Pinacoteca é mais uma visita pra curiosos da história, e você pode aproveitar pra visitar outros centros lá próximo. Um dia de historiador. Vou deixar algumas fotos que ilustram isso.
-                </p>
-                <p class="text-muted mb-0 mt-3">
-                  Tá bom, ta aqui a localização pra não lhe dar esse trabalho: <a href="https://goo.gl/maps/eQYDTQVSCuo">Pinacoteca</a>
-                </p>
-              </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box mt-5 mx-auto">
-                  <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-                  <!-- <h3 class="mb-3">Made with Love</h3> -->
-                </div>
-            </div>
-            <div class="col-lg-8">
-                <div class="">
-                  <!-- <h3 class="mb-3">Made with Love</h3> -->
-                  <p class="text-muted mb-0 mt-5">Algum comentário de Michelly caso ela não fique entediada com o passeio:</p>
-                  <p class="text-muted mb-0 mt-5">(Respeito máximo à essa área)</p>
-                  <blockquote class="quote-box">
-                    <p class="quotation-mark">
-                      “
-                    </p>
-                    <p class="quote-text">
-                    </p>
-                    <hr>
-                    <div style="margin-left: 30px">
-                       Santiago, Michelly
-                      </p>
-                    </div>
-                  </blockquote>
-                
-                </div>
-            </div>
-        </div>
-      </div>
-    </section>
+                                    </p>
 
-    <section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-              <a class="portfolio-box" href="img/pinacoteca/eu_quadros.jpg">
-                <img class="img-fluid" src="img/pinacoteca/eu_quadros.jpg" alt="">
-                <div class="portfolio-box-caption">
-                  <div class="portfolio-box-caption-content">
-                    <div class="project-category text-faded">
-                      Coração da Baleia Jubarte antes do formol deixar esse vidro todo escuro
-                    </div>
-                    <div class="project-name">
-                      <!-- Project Name -->
-                    </div>
+                                    <div class="stats-container">
+                                        <div class="stats">
+                                            <h5>SET/18</h5>
+                                            <p>
+                                                De
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <h5>HOJE</h5>
+                                            <p>
+                                                Até
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <h5>24+</h5>
+                                            <p>
+                                                Meses
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="social-links text-center">
+                                        <a href="https://www.postgresql.org/" target="_blank" title="PostgreSQL"><img src="https://img.icons8.com/color/48/000000/postgreesql.png"/></a>
+                                        <a href="https://www.python.org/" target="_blank" title="Python"><img src="https://img.icons8.com/color/48/000000/python.png"/></a>
+                                        <a href="https://www.linux.org/" target="_blank" title="Linux"><img src="https://img.icons8.com/color/48/000000/linux.png"/></a>
+                                        <a href="https://redis.io/" target="_blank" title="Redis"><img src="https://img.icons8.com/color/48/000000/redis.png"/></a>
+                                        <!-- <a href=""><img src="https://img.icons8.com/ios-filled/50/000000/mysql-logo.png"/></a> -->
+                                    </div>
 
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="iimg/pinacoteca/bicicleta.jpg">
-                  <img class="img-fluid" src="img/pinacoteca/bicicleta.jpg" alt="">
-                  <div class="portfolio-box-caption">
-                    <div class="portfolio-box-caption-content">
-                      <div class="project-category text-faded">
-                        Fetos estranhos (o da direita tinha hidrocefalia)
-                      </div>
-                      <div class="project-name">
-                        <!-- Project Name -->
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div> 
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/pinacoteca/mesa_quadro.jpg">
-              <img class="img-fluid" src="img/pinacoteca/mesa_quadro.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Adivinha qual o macaco
-                  </div>
-                  <div class="project-name">
-                    <!-- Project Name -->
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>     
-        </div>
-      </div>
-    </section>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                    <i class="fa fa-reply"></i> Voltar
+                                </button>
+                                <!-- <div class="social-links text-center">
+                                    <a href=""><img src="https://img.icons8.com/officel/30/000000/css-filetype.png"/></a>
+                                    <a href=""><img src="https://img.icons8.com/officexs/30/000000/html-filetype.png"/></a>
+                                </div> -->
+                            </div>
+                        </div> <!-- end back panel -->
+                    </div> <!-- end card -->
+                </div> <!-- end card-container -->
+            </div> <!-- end col sm 3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <!-- <div class="cover"> -->
+                                <!-- <img src="images/rotating_card_thumb.png"/> -->
+                            <!-- </div> -->
+                            <div class="header">
+                                <h5 class="motto"><i>Aqui estão alguns dos meus projetos pessoais</i>.</h5>
+                            </div>
+                            <div style="height: 65px;" class="social-links text-center">
+                                <a href="#" title="Laravel/PHP"><span class="iconify" data-icon="et:tools-2" data-inline="false"></span></a>
+                                <!-- <img class="img-circle" src="images/rotating_card_profile2.png"/> -->
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">....</h3>
+                                    <p class="profession">Em breve meus projetos estarão aqui.</p>
+                                    <!-- <p class="text-center">Sistema de Monitoramento e Avaliação dos Resultados do Programa Telessaúde.</p> -->
+                                </div>
+                            </div>
+                        </div> <!-- end front panel -->                        
+                    </div> <!-- end card -->
+                </div> <!-- end card-container -->
+            </div> <!-- end col sm 3 -->
 
-    <section class="bg-dark text-white">
-      <div class="container text-center">
-        <h3 class="mb-4">Vai ter mais visita, pode esperar.</h3>
-        <!-- <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a> -->
-      </div>
-    </section>
+        </div> <!-- end col-sm-10 -->
+    </div> <!-- end row -->
+    <!-- <div class="space-200"></div> -->    
+    
+</div>
 
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Se por um acaso mais pessoas gostarem disso a gente vai precisar deixar o contato não é mesmo?</h2>
-            <hr class="my-4">
-            <!-- <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p> -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>(84) 98891-5070</p>
-            <p>Um número (não o meu já que já devo ter sido assaltado a essa altura)</p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-            <p>
-              <a href="mailto:thisisnatown@gmail.com">thisisnatown@gmail.com</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+<p class="text-center">Copyright &copy; 2020 <a href="mailto:lukas_kxy@hotmail.com">lukas_kxy@hotmail.com</a>, feito com <i class="fa fa-heart ct-heart"></i> para você.</p>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+<script type="text/javascript">
+    $().ready(function(){
+        $('[rel="tooltip"]').tooltip();
 
-  </body>
+        $('a.scroll-down').click(function(e){
+            e.preventDefault();
+            scroll_target = $(this).data('href');
+             $('html, body').animate({
+                 scrollTop: $(scroll_target).offset().top - 60
+             }, 1000);
+        });
 
-</html>
+    });
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117277263-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
 
-  gtag('config', 'UA-117277263-1');
+
 </script>
+
+</body>
+</html>
